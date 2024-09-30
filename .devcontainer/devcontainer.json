@@ -1,0 +1,19 @@
+{
+    // Specifies the Docker image to use for the development container.
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+  
+    // Customizations for the VS Code environment.
+    "customizations": {
+      "vscode": {
+        // List of VS Code extensions to be installed in the container.
+        "extensions": [
+          "formulahendry.code-runner",
+          "ms-vsliveshare.vsliveshare",
+          "ritwickdey.LiveServer"
+        ]
+      }
+    },
+  
+    // Command to run each time the container starts.
+    "postStartCommand": "git config --global pull.rebase true && git pull --rebase"
+  }
