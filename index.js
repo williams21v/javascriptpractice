@@ -86,3 +86,13 @@ for (let stat in playerStats) {
         container.appendChild(statElement);
     }
 }
+
+function rollTheDTwenty(){
+    prompt(`What stat would you like to roll for? The options are ${playerStats.keys()}.`)
+    let randomInt = Math.floor(Math.random() * 20) + 1;
+    console.log(randomInt);
+    return randomInt
+    alert(randomInt)
+}
+
+rollTheDTwenty()
